@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme: Noel</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/login.css">
+    <!--<link rel="stylesheet" href="style/progress-bar.css">-->
+</head>
+
+<body>
+    <div class="nav-bar">
+        <img style="justify-content: flex-start;" width="90" src="images/merry-christmas-decorative-logo-with-swash-snowflakes-isolated-white-background-vector-ill_8130-1087-removebg-preview.png" alt="logo web">
+        <a href="index.html">Home</a>
+        <a href="">Product</a>
+        <a href="">About</a>
+        <div class="account">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="login" href="">Login</button>
+            <button class="sign-up" href="">Sign Up</button>
+        </div>
+    </div>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/avatar.webp" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input id="username" type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+
+                <!--<div id="myProgress">
+                    <div id="myBar"></div>
+                </div>-->
+
+                <button type="submit" id="form-submit">Login</button>
+                <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            </div>
+
+            <div class="container" style="background-color:white">
+                <button type="button" onclick="move()" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+    <div class="main">
+        <div class="image-container">
+            <div class="Title">
+                <p>Merry Christmas!</p>
+            </div>
+            <img style="width:100%; height: auto; " src="images/bg.jpg " alt="bg ">
+        </div>
+
+        <div class="countdown">
+            <p>Countdown to Christmas</p>
+            <p id="demo"></p>
+        </div>
+
+        <div class="index-products ">
+            <div class="card">
+                <img src="images/product.png" alt="Denim Jeans" style="width:100%">
+                <h1>Gift</h1>
+                <p class="price">$19.99</p>
+                <p>It's A GIFT!!</p>
+                <p><button id="product">Show Info</button></p>
+            </div>
+
+            <div class="card">
+                <img src="images/product.png" alt="Denim Jeans" style="width:100%">
+                <h1>Gift</h1>
+                <p class="price">$19.99</p>
+                <p>It's A GIFT!!</p>
+                <p><button id="product">Show Info</button></p>
+            </div>
+
+            <div class="card">
+                <img src="images/product.png" alt="Denim Jeans" style="width:100%">
+                <h1>Gift</h1>
+                <p class="price">$19.99</p>
+                <p>It's A GIFT!!</p>
+                <p><button id="product">Show Info</button></p>
+            </div>
+
+            <div class="card">
+                <img src="images/product.png" alt="Denim Jeans" style="width:100%">
+                <h1>Gift</h1>
+                <p class="price">$19.99</p>
+                <p>It's A GIFT!!</p>
+                <p><button id="product">Show Info</button></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer ">
+        <div class="foot ">
+            <div class="foot-item ">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloremque voluptate cupiditate nesciunt quo harum deserunt odio blanditiis, eius porro veniam voluptatem sint ipsa incidunt tenetur, dolores ullam beatae in!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit cum dolorem maiores provident earum perferendis nostrum sed reprehenderit repellendus, cumque dolore eius aliquid quos saepe optio similique distinctio unde molestiae!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod reprehenderit vitae enim soluta repellendus magnam nam vel natus obcaecati nobis. Veritatis voluptate obcaecati earum ipsum non in ut maxime autem!</p>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+<script src="js/countdown.js"></script>
+<script src="js/login.js"></script>
+<script src="js/redirect-to-product.js"></script>
+<!--<script src="js/progress-bar.js"></script>-->
+
+</html>
