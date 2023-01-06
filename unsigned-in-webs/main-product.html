@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/cuoi-khoa/style/index.css">
+    <link rel="stylesheet" href="/cuoi-khoa/style/product.css">
+    <link rel="stylesheet" href="/cuoi-khoa/style/setting.css">
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            border-radius: 15px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            margin-top: 40px;
+            background-color: white;
+            margin-bottom: 20px;
+            color: black;
+            width: 350px;
+        }
+        
+        .heading {
+            margin-top: 100px;
+            font-size: 40px;
+            font: Arial;
+            text-align: center;
+            background-color: red;
+            color: white;
+            border-radius: 30px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Trang web gioi thieu san pham-->
+    <div class="nav-bar">
+        <img style="justify-content: flex-start;" width="90" src="/cuoi-khoa/images/merry-christmas-decorative-logo-with-swash-snowflakes-isolated-white-background-vector-ill_8130-1087-removebg-preview.png" alt="logo web">
+        <a href="/cuoi-khoa/index.html">Home</a>
+        <a href="/cuoi-khoa/unsigned-in-webs/main-product.html">Product</a>
+        <a href="/cuoi-khoa/unsigned-in-webs/about.html">About</a>
+        <div class="account">
+            <button class="login" id="login-button">Login</button>
+            <button class="sign-up" id="signup-button" href="">Sign Up</button>
+        </div>
+        <div class="setting">
+            <button class="enable-dark" onClick="myFunction()">Toggle dark mode</button>
+        </div>
+    </div>
+    <div class="heading">
+        <h1>Main product</h1>
+    </div>
+    <div class="p-container">
+        <div class="card">
+            <img src="/cuoi-khoa/images/product.png" alt="Denim Jeans" style="width:95%">
+            <h1>Gift</h1>
+            <p class="price">$19.99</p>
+            <p>It's A GIFT!!</p>
+            <a href="/cuoi-khoa/unsigned-in-webs/product.html">
+                <p><button class="product-btn" id="product">Show Info</button></p>
+            </a>
+        </div>
+        <div class="card">
+            <img src="/cuoi-khoa/images/product.png" alt="Denim Jeans" style="width:95%">
+            <h1>Gift</h1>
+            <p class="price">$19.99</p>
+            <p>It's A GIFT!!</p>
+            <a href="/cuoi-khoa/unsigned-in-webs/product.html">
+                <p><button class="product-btn" id="product">Show Info</button></p>
+            </a>
+        </div>
+        <div class="card">
+            <img src="/cuoi-khoa/images/product.png" alt="Denim Jeans" style="width:95%">
+            <h1>Gift</h1>
+            <p class="price">$19.99</p>
+            <p>It's A GIFT!!</p>
+            <a href="/cuoi-khoa/unsigned-in-webs/product.html">
+                <p><button class="product-btn" id="product">Show Info</button></p>
+            </a>
+        </div>
+        <div class="card">
+            <img src="/cuoi-khoa/images/product.png" alt="Denim Jeans" style="width:95%">
+            <h1>Gift</h1>
+            <p class="price">$19.99</p>
+            <p>It's A GIFT!!</p>
+            <a href="/cuoi-khoa/unsigned-in-webs/product.html">
+                <p><button class="product-btn" id="product">Show Info</button></p>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer ">
+        <div class="foot ">
+            <div class="foot-item ">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloremque voluptate cupiditate nesciunt quo harum deserunt odio blanditiis, eius porro veniam voluptatem sint ipsa incidunt tenetur, dolores ullam beatae in!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit cum dolorem maiores provident earum perferendis nostrum sed reprehenderit repellendus, cumque dolore eius aliquid quos saepe optio similique distinctio unde molestiae!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod reprehenderit vitae enim soluta repellendus magnam nam vel natus obcaecati nobis. Veritatis voluptate obcaecati earum ipsum non in ut maxime autem!</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        const logbtn = document.getElementById('login-button');
+        logbtn.addEventListener('click', () => {
+            window.location = "/cuoi-khoa/account/login.html"; // Redirecting to other page.
+            return false;
+        })
+
+        const signup_button = document.getElementById('signup-button');
+        signup_button.addEventListener('click', () => {
+            window.location = "/cuoi-khoa/account/login.html"; // Redirecting to other page.
+            return false;
+        })
+    </script>
+    <script src="/cuoi-khoa/js/dark-mode-enabled.js"></script>
+</body>
+
+</html>

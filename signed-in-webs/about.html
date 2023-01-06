@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cuoi-khoa/style/index.css">
+    <link rel="stylesheet" href="/cuoi-khoa/style/about.css">
+    <link rel="stylesheet" href="/cuoi-khoa/style/setting.css">
+    <title>About the site</title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <img style="justify-content: flex-start;" width="90" src="/cuoi-khoa/images/merry-christmas-decorative-logo-with-swash-snowflakes-isolated-white-background-vector-ill_8130-1087-removebg-preview.png" alt="logo web">
+        <a href="/cuoi-khoa/signed-in-webs/signed-in-index.html">Home</a>
+        <a href="/cuoi-khoa/signed-in-webs/main-product.html">Product</a>
+        <a href="/cuoi-khoa/signed-in-webs/about.html">About</a>
+        <div class="setting">
+            <button class="enable-dark" onClick="myFunction()">Toggle dark mode</button>
+            <a href="/cuoi-khoa/index.html"><button class="log-out">Log out</button></a>
+        </div>
+    </div>
+
+
+    <div class="main-about">
+        <div class="info-about">
+            <h1>Welcome!</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi deleniti quibusdam accusamus, eligendi animi aliquid mollitia perferendis repudiandae officia porro repellat id non adipisci sequi, minima facilis eius earum cum?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias delectus nemo dolorem quae illo quam similique sequi temporibus doloremque, obcaecati omnis, perferendis cum voluptatem! In recusandae nesciunt qui voluptate delectus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure, corporis, doloremque unde ratione voluptatum omnis odio iste ipsam distinctio id voluptatem libero nostrum laudantium ut deleniti quas quaerat nam.</p>
+        </div>
+        <div class="image-about">
+            <img src="/cuoi-khoa/images/about-image.jpg" style="width:500px" alt="about-image" srcset="">
+        </div>
+    </div>
+
+    <div class="footer ">
+        <div class="foot ">
+            <div class="foot-item ">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloremque voluptate cupiditate nesciunt quo harum deserunt odio blanditiis, eius porro veniam voluptatem sint ipsa incidunt tenetur, dolores ullam beatae in!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit cum dolorem maiores provident earum perferendis nostrum sed reprehenderit repellendus, cumque dolore eius aliquid quos saepe optio similique distinctio unde molestiae!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod reprehenderit vitae enim soluta repellendus magnam nam vel natus obcaecati nobis. Veritatis voluptate obcaecati earum ipsum non in ut maxime autem!</p>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script src="/cuoi-khoa/js/login.js"></script>
+<script>
+    const logbtn = document.getElementById('login-button');
+    logbtn.addEventListener('click', () => {
+        window.location = "/cuoi-khoa/account/login.html"; // Redirecting to other page.
+        return false;
+    })
+</script>
+<script src="/cuoi-khoa/js/dark-mode-enabled.js"></script>
+
+</html>

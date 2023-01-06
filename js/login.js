@@ -1,10 +1,4 @@
-var modal = document.getElementById('id01');
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+//var modal = document.getElementById('id01');
 
 //Login form log
 account = [
@@ -13,14 +7,23 @@ account = [
     ["account2", "account2"]
 ]
 
-const BtnLog = document.getElementById('form-submit');
+localStorage.setItem("account-data", JSON.stringify(account))
+
+let accountData = JSON.parse(localStorage.getItem("account-data"))
+console.log(accountData);
+
+
+//local storage account data
+
+const BtnLog = document.getElementById('Form-submit');
+
 BtnLog.addEventListener("click", (e) => {
     e.preventDefault();
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-    console.log(username, password);
-    for (var i = 0; i < account.length; i++) {
-        if (username == account[i][0] && password == account[i][1]) {
+    //console.log(username, password);
+    for (i of accountData) {
+        if (username == i[0] && password == i[1]) {
             setTimeout(notify, 1000);
         }
     }
@@ -28,6 +31,6 @@ BtnLog.addEventListener("click", (e) => {
 
 function notify() {
     alert("Login successfully");
-    window.location = "index.html"; // Redirecting to other page.
+    window.location = "/cuoi-khoa/signed-in-webs/signed-in-index.html"; // Redirecting to other page.
     return false;
 }

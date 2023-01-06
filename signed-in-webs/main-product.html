@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="/cuoi-khoa/style/index.css">
+    <link rel="stylesheet" href="/cuoi-khoa/style/pop-up.css">
+    <link rel="stylesheet" href="/cuoi-khoa/style/setting.css">
+    <style>
+        .p-container {
+            background-color: red;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: row;
+            margin-right: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <img style="justify-content: flex-start;" width="90" src="/cuoi-khoa/images/merry-christmas-decorative-logo-with-swash-snowflakes-isolated-white-background-vector-ill_8130-1087-removebg-preview.png" alt="logo web">
+        <a href="/cuoi-khoa/signed-in-webs/signed-in-index.html">Home</a>
+        <a href="/cuoi-khoa/signed-in-webs/main-product.html">Product</a>
+        <a href="/cuoi-khoa/signed-in-webs/about.html">About</a>
+        <div class="setting">
+            <button class="enable-dark" onClick="myFunction()">Toggle dark mode</button>
+            <a href="/cuoi-khoa/index.html"><button class="log-out">Log out</button></a>
+        </div>
+    </div>
+
+    <div class="p-container">
+        <div class="product-div">
+            <img class="product-img" src="/cuoi-khoa/images/product.png" alt="">
+            <p class="product-price">10.000đ</p>
+            <div class="product-content">
+                <a style="color: red;" class="a-buy" href="/cuoi-khoa/signed-in-webs/product.html">Mua</a>
+                <p class="product-name">Product</p>
+            </div>
+        </div>
+
+        <div class="product-div">
+            <img class="product-img" src="/cuoi-khoa/images/product.png" alt="">
+            <p class="product-price">25.000đ</p>
+            <div class="product-content">
+                <a style="color: red;" class="a-buy" href="/cuoi-khoa/signed-in-webs/product.html">Mua</a>
+                <p class="product-name">Product</p>
+            </div>
+        </div>
+
+        <div class="product-div">
+            <img class="product-img" src="/cuoi-khoa/images/product.png" alt="">
+            <p class="product-price">30.000đ</p>
+            <div class="product-content">
+                <a style="color: red;" class="a-buy" href="/cuoi-khoa/signed-in-webs/product.html">Mua</a>
+                <p class="product-name">Product</p>
+
+            </div>
+        </div>
+        <div class="product-div">
+            <img class="product-img" src="/cuoi-khoa/images/product.png" alt="">
+            <p class="product-price">88.000đ</p>
+            <div class="product-content">
+                <a style="color: red;" class="a-buy" href="/cuoi-khoa/signed-in-webs/product.html">Mua</a>
+                <p class="product-name">Product</p>
+            </div>
+        </div>
+        <div class="product-div">
+            <img class="product-img" src="/cuoi-khoa/images/product.png" alt="">
+            <p class="product-price">14.000đ</p>
+            <div class="product-content">
+                <a style="color: red;" class="a-buy" href="/cuoi-khoa/signed-in-webs/product.html">Mua</a>
+                <p class="product-name">Product</p>
+
+            </div>
+        </div>
+        <div class="product-div">
+            <img class="product-img" src="/cuoi-khoa/images/product.png" alt="">
+            <p class="product-price">9.000đ</p>
+            <div class="product-content">
+                <a style="color: red;" class="a-buy" href="/cuoi-khoa/signed-in-webs/product.html">Mua</a>
+                <p class="product-name">Product</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer ">
+        <div class="foot ">
+            <div class="foot-item ">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloremque voluptate cupiditate nesciunt quo harum deserunt odio blanditiis, eius porro veniam voluptatem sint ipsa incidunt tenetur, dolores ullam beatae in!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit cum dolorem maiores provident earum perferendis nostrum sed reprehenderit repellendus, cumque dolore eius aliquid quos saepe optio similique distinctio unde molestiae!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod reprehenderit vitae enim soluta repellendus magnam nam vel natus obcaecati nobis. Veritatis voluptate obcaecati earum ipsum non in ut maxime autem!</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/cuoi-khoa/js/dark-mode-enabled.js"></script>
+<script>
+    const logbtn = document.getElementById('login-button');
+    logbtn.addEventListener('click', () => {
+        window.location = "/cuoi-khoa/account/login.html"; // Redirecting to other page.
+        return false;
+    })
+
+    const signup_button = document.getElementById('signup-button');
+    signup_button.addEventListener('click', () => {
+        window.location = "/cuoi-khoa/account/login.html"; // Redirecting to other page.
+        return false;
+    })
+
+    function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+</script>
+
+</html>
